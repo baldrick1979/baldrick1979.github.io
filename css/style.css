@@ -1,0 +1,383 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Navigation */
+
+.navbar-brand img {
+    height: 5rem;
+}
+
+.navbar {
+    font-size: 1.15;
+    font-weight: 600;
+    letter-spacing: .1rem;
+    background-color: #000;
+}
+
+.nav-item {
+    padding: .5rem;
+}
+
+.nav-link {
+    color: #ffffff!important;  
+}
+
+.nav-link.active,
+.nav-link:hover {
+    color: #636363!important;  
+}
+
+/* Home */
+
+.hero {
+    /* Sizing */
+    width: 100vw;
+    height: 100vh;
+    
+    /* Flexbox stuff */
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    
+    /* Text styles */
+    text-align: center;
+    color: white; /* ADD THIS LINE */
+    
+    /* Background styles */
+    background-image: url('../images/hero.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.hero h1 {
+    /* Text styles */
+    font-size: 5em;
+    
+    /* Margins */
+    margin-top: 500px;
+    margin-bottom: 0.5em;
+    margin-left: 10px;
+}
+
+.hero .btn {
+    /* Positioning and sizing */
+    display: block;
+    width: 200px;
+    
+    /* Padding and margins */
+    padding: 1em;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    
+    /* Text styles */
+    color: white; /* CHANGE THIS LINE */
+    text-decoration: none;
+    font-size: 1.5em;
+    
+    /* Border styles */
+    border: 3px solid white; /* CHANGE THIS LINE */
+    border-radius: 20px;
+}
+
+
+/* About */
+
+.about {
+    background: linear-gradient(#000,#BF4949);
+}
+
+.box-row {
+    padding: 20px;
+}
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    color:#fff
+}
+
+
+
+
+/* Genres */
+
+.psych {
+    background: linear-gradient(#A6615B,#fff);
+}
+
+.invasion {
+    background: linear-gradient(#59C0B2,#fff);
+}
+
+.rock {
+    background: linear-gradient(#BF4949,#fff);
+}
+
+.animation-element.slide-right.in-view {
+    opacity: 1;
+    transform: translate3d(0,0,0);
+}
+
+.animation-element.slide-right {
+    transform: all .5s;
+    transition-property: all;
+    transition-duration: 0.5s;
+    transition-delay: 0s;
+}
+
+
+
+
+/* Carousel */
+
+#carousel {
+    box-shadow: 0 1rem 1rem rgba(0, 0, 0, .1);
+    background-color: black;
+}
+
+.carousel-inner {
+    max-height: 50rem!important;
+}
+
+.carousel-item-next,
+.carousel-item-prev,
+.carousel-item.active {
+    transition: transform 1.2s ease;
+}
+
+/* Carousel content */
+
+.carousel-caption {
+    position: absolute;                                   /* Position where we want */
+    top: 70%;                                             /* 54% from top of container */
+    transform: translateY(-50%);                          /* Places it in the centre */
+    text-transform: uppercase;                            /* All uppercase */
+}
+
+.bg-custom {
+    background-color: rgba(0, 0, 0, .4);                   /* 40% transparency */
+    color: white;
+    border-radius: 1rem;                                   /* Rounded corner */
+}
+
+.carousel-caption h3 {
+    font-size: 2.2rem;
+    text-shadow: .1rem .1rem .2rem rgba(0, 0, 0, 1)
+}
+
+
+/* Footer */
+
+.footer {
+    background-color: #000;
+}
+
+
+
+/* Psychedelic */
+
+.psychedelic {
+    background: linear-gradient(#59C0B2,#fff)
+}
+
+
+
+
+
+
+
+p { 
+    color: #000;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.col-2 {
+    flex-basis: 50%;
+    min-width: 300px;
+}
+
+.col-2 img {
+    max-width: 100%;
+    padding: 50px 0;
+}
+
+.col-2 h1 {
+    font-size: 50px;
+    line-height: 60px;
+    margin: 25px 0;
+}
+
+.bg {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background-image: url('images/hero.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 1960px 1000px;
+}
+
+
+/* Styles button */
+
+.btn {
+    display: inline-block;
+    background: #000;
+    color: #fff;
+    padding: 8px 30px;
+    margin: 30px 0;
+    border-radius: 30px;
+    transition: background 0.5s; 
+}
+
+.btn:hover {
+    background: #563434;
+}
+
+/* Background of header section */
+
+.header {
+    background: radial-gradient(#fff,#ffd6d6);
+}
+
+/* Adds margin to the top of header content */
+
+.header .row {
+    margin-top: 70px;
+}
+
+/* Margins for about pics */
+
+
+
+.col-3 {
+    flex-basis: 30%;
+    min-width: 250px;
+    margin-bottom: 30px;
+}
+
+.col-3 img {
+    width: 100%;
+}
+
+.small-container {
+    max-width: 1080px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.col-4 {
+    flex-basis: 25%;
+    padding: 10px;
+    margin-bottom: 50px;
+    transition: transform 0.5s;
+}
+
+.col-4 img {
+    width: 800px;
+    height: auto;
+}
+
+.title {
+    text-align: center;
+    margin: 0 auto 80px;
+    position: relative;
+    line-height: 60px;
+    color: #555;
+}
+
+
+
+
+
+
+/* -- media query for menu */
+
+@media only screen and (max-width: 800px){
+    
+    nav ul {
+        position: absolute;
+        top: 70px;
+        left: 0;
+        background: #333;
+        width: 100%;
+        overflow: hidden;
+        transition: max-height 0.5;
+            
+    }
+    
+    nav ul li {
+        display: block;
+        margin-right: 50px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    
+    nav ul li a {
+        color: #fff; 
+    }
+    
+    .menu-icon {
+        display: block;
+        cursor: pointer;
+    }
+}
+    
+    
+/*-- Bootstrap Mobile Gutter Fix --*/
+.row, .container-fluid {
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+  }
+  
+  /*-- Fixed Background Image --*/
+  .fixed-background {
+    position: relative;
+    width: 100%;
+    z-index: 1000!important;
+  }
+  .fixed-wrap {
+    clip: rect(0, auto, auto, 0);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -999 !important;
+  }
+  .fixed {
+    z-index: -999!important;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center center;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    will-change: transform;
+  }
