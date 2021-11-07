@@ -179,6 +179,11 @@ p {
     text-shadow: .1rem .1rem .2rem rgba(0, 0, 0, 1)
 }
 
+/* Playlists */
+
+.playlists {
+    background: linear-gradient(#59C0B2,#fff); 
+}
 
 /* Footer */
 
