@@ -6,7 +6,7 @@
 
 body {
     overflow-x: hidden;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Futura', sans-serif;
 }
 
 /* Navigation */
@@ -37,58 +37,43 @@ body {
 
 /* Home */
 
-.hero {
-    /* Sizing */
-    width: 100vw;
-    height: 100vh;
-    
-    /* Flexbox stuff */
-    display: flex;
-    justify-content: left;
-    align-items: left;
-    
-    /* Text styles */
-    text-align: center;
-    color: white; /* ADD THIS LINE */
-    
-    /* Background styles */
-    background-image: url('../images/hero.jpg');
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-}
+#myVideo {
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+  }
 
-.hero h1 {
+.hero-content h1 {
     /* Text styles */
     font-size: 5em;
-    
-    /* Margins */
-    margin-top: 500px;
-    margin-bottom: 0.5em;
-    margin-left: 10px;
+    font-family: 'Nanum Gothic', sans-serif;
 }
 
-.hero .btn {
-    /* Positioning and sizing */
-    display: block;
-    width: 200px;
-    
-    /* Padding and margins */
-    padding: 1em;
-    margin-top: 50px;
-    margin-left: auto;
-    margin-right: auto;
-    
-    /* Text styles */
-    color: white; /* CHANGE THIS LINE */
-    text-decoration: none;
-    font-size: 1.5em;
-    
-    /* Border styles */
-    border: 3px solid white; /* CHANGE THIS LINE */
-    border-radius: 20px;
+.h1, h2, h3, h4 ,h5 {
+    font-family: 'Nanum Gothic', sans-serif;
 }
+
+header.hero {
+    position: relative;
+    height: 89vh;
+    min-height: 25rem;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+ .hero-content {
+    position: absolute;
+    bottom: 0;
+    color: #f1f1f1;
+    background: rgba(0, 0, 0, 0.5);
+    width: 40%;
+    padding: 20px;
+    justify-content: left;
+    align-items: left;
+  }
+
+
+
 
 
 /* About */
@@ -101,12 +86,17 @@ body {
     padding: 20px;
 }
 
+.box-text {
+    background: rgba(0, 0, 0, 0.5);
+}
+
 p {
     display: block;
     margin-block-start: 1em;
     margin-block-end: 1em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
+    font-family: 'Futura', sans-serif;
     color:#fff
 }
 
@@ -114,6 +104,10 @@ p {
 
 
 /* Genres */
+
+.genre-header {
+    background: #000;
+}
 
 .psych {
     background: linear-gradient(#A6615B,#fff);
@@ -126,19 +120,6 @@ p {
 .rock {
     background: linear-gradient(#BF4949,#fff);
 }
-
-.animation-element.slide-right.in-view {
-    opacity: 1;
-    transform: translate3d(0,0,0);
-}
-
-.animation-element.slide-right {
-    transform: all .5s;
-    transition-property: all;
-    transition-duration: 0.5s;
-    transition-delay: 0s;
-}
-
 
 
 
@@ -216,21 +197,7 @@ p {
     justify-content: space-around;
 }
 
-.col-2 {
-    flex-basis: 50%;
-    min-width: 300px;
-}
 
-.col-2 img {
-    max-width: 100%;
-    padding: 50px 0;
-}
-
-.col-2 h1 {
-    font-size: 50px;
-    line-height: 60px;
-    margin: 25px 0;
-}
 
 .bg {
     width: 100%;
@@ -273,52 +240,53 @@ p {
     margin-top: 70px;
 }
 
-/* Margins for about pics */
+/* Modal */
 
-
-
-.col-3 {
-    flex-basis: 30%;
-    min-width: 250px;
-    margin-bottom: 30px;
+.modal {
+    padding: 0 !important; /* override inline padding-right added from js */
 }
 
-.col-3 img {
-    width: 100%;
+.modal-dialog {
+    width: 50%;
+    max-width: 50%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+ 
+.vertical-align-center {
+    /* To center vertically */
+    display: table-cell;
+    vertical-align: middle;
+    pointer-events: none;
 }
 
-.small-container {
-    max-width: 1080px;
-    margin: auto;
-    padding-left: 25px;
-    padding-right: 25px;
-}
-
-.col-4 {
-    flex-basis: 25%;
-    padding: 10px;
-    margin-bottom: 50px;
-    transition: transform 0.5s;
-}
-
-.col-4 img {
-    width: 800px;
+.modal-content {
     height: auto;
+    min-height: 100%;
+    border-radius: 0;
+    background-color: #000;
 }
 
-.title {
-    text-align: center;
-    margin: 0 auto 80px;
+.modal .modal-body {
+   overflow-y: auto;
+}
+
+#video {
     position: relative;
-    line-height: 60px;
-    color: #555;
-}
+    display: flex;
+    padding: 4em 0em 0em;
+    display: block;
+    width: 100%;
+    height: 100%;
+}  
+
+  .card-body-collapse {
+      background-color: #000;
+  }
 
 
-
-
-
-
+  
 /* -- media query for menu */
 
 @media only screen and (max-width: 800px){
@@ -351,6 +319,16 @@ p {
     }
 }
     
+
+/* Prevents video from loading on mobile devices */
+
+@media (max-width: 575.98px) {
+    header.home-hero video {
+        display: none;
+   }
+}
+
+
     
 /*-- Bootstrap Mobile Gutter Fix --*/
 .row, .container-fluid {

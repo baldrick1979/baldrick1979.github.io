@@ -7,44 +7,54 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>Ride The Snake - Monotype</title>
         <meta name="description" content="Portfolio">
+        <!-- Google Fonts -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nanum Gothic|Futura|Helvetica">
         <!-- Bootstrap 4.5 CSS -->
-	    <link rel="stylesheet" href="css/bootstrap.min.css">
+	      <link rel="stylesheet" href="css/bootstrap.min.css">
        	<!-- Style CSS -->
-	    <link rel="stylesheet" href="css/style.css">
+	      <link rel="stylesheet" href="css/style.css">
         <!-- Font awesome -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+        <!-- Animate -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
     </head>
     <body>
 
-        <!--Navigation-->
-<nav class="navbar navbar-transparent navbar-expand-lg sticky-top">
-    <div class="container">
-
-        <a href="index.html" class="navbar-brand"><img src="images/monotype.png" alt="Logo" title="Logo"></a>
-
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
-            <span class="navbar-toggler-icon"></span></button>
-
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item"><a href="index.html" class="nav-link active">Home</a></li>
-                    <li class="nav-item"><a href="#about" class="nav-link">About us</a></li>
-                    <li class="nav-item"><a href="#genres" class="nav-link">Genres</a></li>
-                    <li class="nav-item"><a href="#gallery" class="nav-link">Gallery</a></li>
-                    <li class="nav-item"><a href="#playlists" class="nav-link">Playlists</a></li>
-            </div>
-
+        <!------------------------Navigation----------------------------------------------------->
+    <nav class="navbar navbar-transparent navbar-expand-lg sticky-top">
+     <div class="container">
+       <div class="navbar"></div>
+      <a href="index.html" class="navbar-brand"><img src="images/monotype.png" alt="Logo" title="Logo"></a>
+       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+         <span class="navbar-toggler-icon"></span>
+       </button>
+         <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+             <li class="nav-item"><a href="index.html" class="nav-link active">Home</a></li>
+             <li class="nav-item"><a href="#about" class="nav-link">About us</a></li>
+             <li class="nav-item"><a href="#genres" class="nav-link">Genres</a></li>
+             <li class="nav-item"><a href="#gallery" class="nav-link">Gallery</a></li>
+             <li class="nav-item"><a href="#playlists" class="nav-link">Playlists</a></li>
+         </div>
+     </div>
     </div>
-</nav>
+    </nav>
 
 <!--Hero Image-->
 
-<section class="hero">
-    <div class="hero-inner">
+    <header class="hero" role="banner">
+          <video autoplay muted loop id="myVideo">
+            <source src="media/hero.mp4" type="video/mp4">
+            <img alt="poster image mobile" class="poster img-fluid mx-auto d-block d-sm-none" src="images/hero.jpg" />
+          </video>
+     <div class="hero-content">
+       <div class="image-left">
         <h1>Ride the Snake</h1>
         <h2>A 60s journey</h2>
-    </div>
-</section>
+     </div>
+     </div>   
+</header>
 
         
 <!---------------------------------------------------- About us ------------------------------------------------------------------->
@@ -54,7 +64,7 @@
    <div class="row py-5">
 
      <div class="col-lg-6 mb-4 my-lg-auto">
-       <h1 class="text-light font-weight-bold mb-4">About Us</h1>
+       <h1 class="text-white">About Us</h1>
        <p class="mb-4 text-light">The 60s was an era of music like no other, which shifted the landscape and paved the way for how we know music today. From the British Invasion, to the
         perception expanding psychedelia, to harder edge rock. It was a decade of revolution in so many ways. We have captured the essence of all the music right here.</p>
        </div>
@@ -70,21 +80,26 @@
   
         
 <!-------------------------------------------------------- Genres ------------------------------------------------------------------------------------------>   
-<div class="psych">    
-<div class="container-fluid" id="genres">
+    
 
-    <div class="row w-100 text-center">
-      <div class="col-lg-12">
-        <h2 class="mb-2 mt-4 font-weight-bold text-white">Genres</h2>
-        <div class="border-top border-light w-25 mx-auto my-3"></div>
-        <p class="subheading mb-0 text-center text-white">The different sounds of the 60s</p>
+  <div class="genre-header" id="genres">
+  <div class="row w-100 py-4 text-center">
+    <div class="col-lg-12">
+      <h2 class="mb-2 font-weight-bold text-white">Genres</h2>
+      <div class="border-top border-light w-25 mx-auto my-3"></div>
+      <p class="subheading mb-0 text-center text-white">The different sounds of the 60s</p>
     </div>
   </div>
+  </div>
+  </div>
 
+
+
+    <div class="psych">
    <div class="row w-100 box-row">
-    <div class="col-lg-6 justify-content-md-center">
-      <div class="box-text">
-        <h3 class="text-white">Psychedelic rock</h3>
+    <div class="col-lg-4 justify-content-md-center">
+      <div class="box-text py-4 px-4 text-white">
+        <h3 class="pb-3">Psychedelic Rock</h3>
         <p class="text-white">Considering it was widely dismissed at the time as merely another momentary fad, and erroneously 
            presumed to be pretty much dead in the water by the middle of 1968, the influence of psychedelic 
            rock runs long and deep. If one is to broadly interpret the term as a catch-all synonym for expansion 
@@ -95,45 +110,47 @@
       </div>
     </div>
 
-    <div class="col-lg-6 justify-content-md-center">
-      <div class="animation-element slide-right">
-        <img src="images/jefferson_airplane.jpg" class="img-fluid w-100" alt="Jefferson Airplane" />
-      </div>
+  <div class="col-lg-4 justify-content-md-center">
+    <div class="image-right">
+      <img src="images/jefferson_airplane.jpg" class="img-fluid w-100" alt="Jefferson Airplane" />
     </div>
   </div>
+  </div>
+</div>
+</div>
 </div>
 
-  <div class="invasion">
+<div class="invasion">
   <div class="row w-100 box-row">
-
-    <div class="col-lg-6 justify-content-md-center">
-      <div class="animation-element slide-left">
+    <div class="col-lg-4 justify-content-md-center">
+      <div class="image-left">
         <img src="images/the_zombies.jpg" class="img-fluid w-100" alt="The Zombies"/>
       </div>
     </div>
 
-    <div class="col-sm-6 justify-content-md-center">
-      <div class="box-text">
-        <h3>British Invasion</h3>
-        <p>The British Invasion, was musical movement of the mid-1960s composed of British rock-and-roll groups whose popularity spread rapidly to the United States.</p>
-        <p>The Beatles’ triumphant arrival in New York City on February 7, 1964, opened America’s doors to a wealth of British musical talent. What followed would be 
-            called—with historical condescension by the willingly reconquered colony—the second British Invasion. Like their transatlantic counterparts in the 1950s, 
-            British youth heard their future in the frantic beats and suggestive lyrics of American rock and roll. But initial attempts to replicate it failed. 
-            Lacking the indigenous basic ingredients—rhythm and blues and country music—of rock and roll, enthusiasts could bring only crippling British decorum 
-            and diffidence. The only sign of life was in the late 1950s skiffle craze, spearheaded by Scotland’s Lonnie Donegan.</p>
-            <a href="" class="btn btn-outline-dark btn-md">Browse</a>
-      </div>
-    </div>
+<div class="col-sm-4 justify-content-md-center">
+ <div class="box-text py-4 px-4 text-white">
+  <h3 class="pb-3">British Invasion</h3>
+  <p class="text-white">The British Invasion, was musical movement of the mid-1960s composed of British rock-and-roll groups whose popularity spread rapidly to the United States.</br>
+  </br>
+      The Beatles’ triumphant arrival in New York City on February 7, 1964, opened America’s doors to a wealth of British musical talent. What followed would be 
+     called—with historical condescension by the willingly reconquered colony—the second British Invasion. Like their transatlantic counterparts in the 1950s, 
+     British youth heard their future in the frantic beats and suggestive lyrics of American rock and roll. But initial attempts to replicate it failed. 
+     Lacking the indigenous basic ingredients—rhythm and blues and country music—of rock and roll, enthusiasts could bring only crippling British decorum 
+     and diffidence. The only sign of life was in the late 1950s skiffle craze, spearheaded by Scotland’s Lonnie Donegan.</p>
+  <a href="" class="btn btn-outline-dark btn-md">Browse</a>
+ </div>
+</div>
 
   </div>
 </div>
 
    <div class="rock"> 
   <div class="row w-100 box-row">
-    <div class="col-lg-6 justify-content-md-center">
-      <div class="box-text">
-        <h3>Hard Rock</h3>
-        <p>Hard rock or heavy rock is a loosely defined subgenre of rock music typified by a heavy use of aggressive vocals, distorted electric guitars, bass guitar,
+    <div class="col-lg-4 justify-content-md-center">
+      <div class="box-text py-4 px-4 text-white">
+        <h3 class="pb-3">Hard Rock</h3>
+        <p class="text-white">Hard rock or heavy rock is a loosely defined subgenre of rock music typified by a heavy use of aggressive vocals, distorted electric guitars, bass guitar,
         and drums, sometimes accompanied with keyboards. It began in the mid-1960s with the garage, psychedelic and blues rock movements. Some of the earliest hard rock 
         music was produced by the Kinks, the Who, the Rolling Stones, the Yardbirds, Cream and the Jimi Hendrix Experience. In the late 1960s, bands such as the Jeff Beck 
         Group, Iron Butterfly, the Beatles, Led Zeppelin, Golden Earring, Steppenwolf and Deep Purple also produced hard rock</p>
@@ -141,8 +158,8 @@
       </div>
     </div>
     
-    <div class="col-lg-6 justify-content-md-center">
-        <div class="animation-element slide-right">
+    <div class="col-lg-4 justify-content-md-center">
+      <div class="image-right">
         <img src="images/led_zep.jpg" class="img-fluid w-100" alt="Led Zeppelin"/>
       </div>
     </div>
@@ -235,35 +252,41 @@
         <div class="row my-5">
 
             <div class="col-md-4 my-4">
+              <div class="image-left">
                 <img src="images/13th_fe.jpg" alt="13th Floor Elevators" class="w-100">
                 <h4 class="my-4">The Psychedelic 60s</h4>
                 <p>Velvet Underground, The Doors, Pink Floyd, 13th Floor Elevators, Jefferson Airplane...</p>
                 <a href="" class="btn btn-outline-dark btn-md">Spotify playlist</a>
             </div>
+            </div>
 
             <div class="col-md-4 my-4">
+              <div class="image-centre"> 
                 <img src="images/the_rolling_stones.jpg" alt="The Rolling Stones" class="w-100">
                 <h4 class="my-4">The British Invasion</h4>
                 <p>The Small Faces, The Beatles, The Kinks, The Rolling Stones, The Who...</p>
                 <a href="" class="btn btn-outline-dark btn-md">Spotify playlist</a>
             </div>
+            </div>
 
             <div class="col-md-4 my-4">
+              <div class="image-right">
                 <img src="images/black_sabbath.jpg" alt="Black Sabbath" class="w-100">
                 <h4 class="my-4">The Hard Rock 60s</h4>
                 <p>Led Zeppelin, Black Sabbath, Deep Purple, The Grateful Dead, Jimi Hendrix...</p>
                 <a href="" class="btn btn-outline-dark btn-md">Spotify playlist</a>
             </div>
             </div>
+            </div>
         </div>        
     </div> 
         
-    <!-- footer -->
+    <!------------------------------------------------- Footer ------------------------------------------------------------------------->
      
     <div class="footer">
      <hr class="m-2">
-    <div class="row">
-      <div class="col-lg-12 text-center">
+    <div class="row w-100 py-4 text-center">
+      <div class="col-lg-12">
         <h3 class="text-light">FOLLOW US</h3>
         <i class="fab fa-facebook fa-lg" style="color: white"></i>
         <i class="fab fa-twitter fa-lg" style="color: white"></i>
@@ -274,7 +297,7 @@
 
     <hr class="m-0">
 
-    <div class="disclaimer col-lg-12 text-center max-500">
+    <div class="disclaimer col-lg-12 pb-3 text-center max-500">
         <p class="text-light">&copy; 2021 - Joel Derham</p>
         <p class="text-light">This website has been created as part of an assignment in an approved course of study for Curtin University and contains copyright material not created by the author. All copyright material used remains copyright of the respective owners and has been used here pursuant to Section 40 of the
         Copyright Act 1968 (Commonwealth of Australia). No part of this work may be reproduced without consent of the original copyright owners. See code comments for references.</p>
@@ -286,6 +309,8 @@
 
 	<!-- Script Source Files -->
 
+  <!-- Scroll Reveal -->
+  <script src="https://unpkg.com/scrollreveal"></script>
 	<!-- jQuery -->
 	<script src="js/jquery-3.5.1.min.js"></script>
 	<!-- Bootstrap 4.5 JS -->
@@ -294,5 +319,8 @@
 	<script src="js/popper.min.js"></script>
 	<!-- Font Awesome -->
 	<script src="js/all.min.js"></script>
+  <!-- Javascript-->
+  <script src="js/main.js"></script>
 
-	<!-- End Script Source Files -->
+
+
