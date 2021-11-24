@@ -1,5 +1,3 @@
-$('#myModal').modal('toggle')
-
 
 
 ScrollReveal().reveal('.navbar', {
