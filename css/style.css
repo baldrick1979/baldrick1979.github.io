@@ -109,7 +109,7 @@ p {
     height: auto!important;
   }
 
-.hero-content h1 {
+.hero h1 {
     font-size: 5em;
     letter-spacing: .2rem;
     font-family: 'Mouse Memoirs', sans-serif;
@@ -137,18 +137,16 @@ header.hero {
 }
 
 .header-caption h1,h2 {
-    font-size: 500%;
     text-transform: uppercase; 
     text-shadow: 1px 1px 10px #000;
     border-radius: 1rem;
     padding: 20px;
-    font-family: 'Mouse Memoirs', sans-serif;
 }
 
   .scroll-down {
     position: relative;
     margin: 0 auto;
-    left: 50%;
+    left: 80%;
     bottom: 5%;
     z-index: 1;
     animation-name: animateScroll;
